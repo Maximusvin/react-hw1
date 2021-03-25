@@ -1,12 +1,12 @@
 import Layout from './components/Layout/Layout';
+import Task1 from './components/Task1';
 
 import './App.css';
 
 function App() {
   return (
     <Layout>
-      <h1>Home Work #2.2</h1>
-      <div>Hello</div>
+      <Task1 />
     </Layout>
   );
 }
