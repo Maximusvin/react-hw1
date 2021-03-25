@@ -8,7 +8,7 @@ const C = ({ count, onGetNumber }) => {
       <button
         className={s.button}
         type="button"
-        onClick={() => onGetNumber((Math.random() * 100).toFixed(1) * 1000)}
+        onClick={() => onGetNumber((Math.random() * 100).toFixed(1) * factor)}
       >
         {count ? `RandomCount: ${count}` : 'Get random count'}
       </button>
