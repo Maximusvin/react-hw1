@@ -7,7 +7,12 @@ class Task2 extends Component {
     randomCount: null,
   };
 
-  getRandomCount = num => {
+  getFactorCount = num => {
+    const factor = 1000;
+    this.setRandomCount(num * factor);
+  };
+
+  setRandomCount = num => {
     this.setState({ randomCount: num });
   };
 
@@ -22,7 +27,7 @@ class Task2 extends Component {
             ? `Отримане число: ${randomCount}`
             : 'Клікніть по кнопці, щоб отримати рандомне число'}
         </p>
-        <A onGetNumber={this.getRandomCount} count={randomCount} />
+        <A onGetNumber={this.getFactorCount} count={randomCount} />
       </div>
     );
   }
